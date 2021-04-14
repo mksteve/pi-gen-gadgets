@@ -1,0 +1,1 @@
+deb [signed-by=/usr/local/share/keyrings/repo.gpg]  http://jamulus-repo-location RELEASE jamulus

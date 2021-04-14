@@ -1,0 +1,8 @@
+[Unit]
+Description=Login run jamulus
+
+[Service]
+ExecStart=jamulus --nogui --connect _JAMULUS_IP_ --mutemyown --clientname _JAMULUS_CLIENT_
+
+[Install]
+WantedBy=default.target

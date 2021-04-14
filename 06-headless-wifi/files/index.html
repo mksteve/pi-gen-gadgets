@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Configure WiFi</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+html { 
+	background-color:#092E20; 
+}
+
+body { 
+	position:relative;
+	border-radius:8px; 
+	box-shadow:black 0px 0px 2px; 
+	background:#ffffff; 
+	margin:20px auto; 
+	border:solid 1px black; 
+	font-family: arial, sans-serif; 
+	padding:20px;  
+}
+#wifi_settings {
+	background-color: green;
+	border:solid 6px brown;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	box-shadow: #111 1px 1px 2px;
+	display: grid;
+	grid-template-columns: 200px 400px;
+	grid-gap: 5px;
+	
+}
+
+    </style>
+  </head>
+  <body>
+    <form action="new-wifi.php" method="post" >
+      <div id='wifi_settings'>
+	<label for="wifi">Wi-Fi SSID</label>
+	<input id="wifi" name="wifi" type="text" />
+	<label for="password">Wi-Fi Password</label>
+	<input id="password" name="password" type="password" /><p/>
+      </div><p/>
+      <input type="submit" value="Connect" />
+    </form>
+  </body>
+</html>
