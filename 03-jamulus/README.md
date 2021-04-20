@@ -74,3 +74,8 @@ aptly snapshot create example-jamulus-snapshot-3.7.0 from repo example-jamulus
 #      BA4129C43934874464F3BE4F9F55C2 >>>C8C13CAB6F<<<
 aptly publish --keyring jamulus-repo1.gpg --gpg-key C13CAB6F -distribution=stable snapshot jamulus-3.7.0
 
+########################################
+# For our images to understand the aptly site is trust worthy, we
+# need to export the gpg key we used to
+# 03-jamulus/files/repo.gpg
+gpg --no-default-keyring --keyring jamulus-repo.gpg --export --output 03-jamulus/files/repo.gpg
