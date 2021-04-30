@@ -1,0 +1,10 @@
+[Unit]
+Description=login update jamulus
+
+[Service]
+ExecStart=/home/pi/autoupdate.sh
+Type=oneshot
+
+[Install]
+WantedBy=default.target
+
