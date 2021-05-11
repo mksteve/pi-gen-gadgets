@@ -1,0 +1,11 @@
+# How to run the jackd process
+#
+# Use dynamic paramaters with runjack.sh working out jackd command line from available sound cards.
+#
+JACKDRC='/usr/local/bin/runjack'
+#
+# use standard jackd parameters hard coded.
+#
+#JACKDRC='/usr/bin/jackd -P75 -dalsa -r48000 -p64 -n16 -Chw:sndrpihifiberry -Phw:sndrpihifiberry,0'
+
+export JACKDRC

@@ -1,0 +1,8 @@
+WPA_COUNTRY=<countrycode>
+HOTSPOT_SSID=<ssid>
+HOTSPOT_PASSWORD=<password>
+HOTSPOT_CHANNEL=<channel>
+
+export HOTSPOT_SSID
+export HOTSPOT_PASSWORD
+export HOTSPOT_CHANNEL

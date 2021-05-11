@@ -1,0 +1,4 @@
+JAMULUS_IP=<ip-address>
+JAMULUS_CLIENT=<clientname>
+export JAMULUS_IP
+export JAMULUS_CLIENT

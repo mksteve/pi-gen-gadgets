@@ -1,0 +1,2 @@
+SOUNDCARD=hifiberry-dacplusadcpro
+export SOUNDCARD
