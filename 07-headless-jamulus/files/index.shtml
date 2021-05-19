@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Settings</title>
+    <style type="text/css" media="screen">
+  * {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+  }
+html { 
+	background-color:#092E20; 
+}
+
+body { 
+	position:relative;
+	border-radius:8px; 
+	box-shadow:black 0px 0px 2px; 
+	background:#ffffff; 
+	margin:20px auto; 
+	border:solid 1px black; 
+	font-family: arial, sans-serif; 
+	padding:20px;  
+}
+#wifi_settings {
+	background-color: green;
+	border:solid 6px brown;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	box-shadow: #111 1px 1px 2px;
+	display: grid;
+	grid-template-columns: 200px 400px;
+	grid-gap: 5px;
+	
+}
+
+    </style>
+  </head>
+  <body>
+	<h1>Network status</h1>
+	<pre>
+<!--#exec cmd="ifconfig -a" -->
+	</pre>
+	<h1>aplay results</h1>
+	<pre>
+<!--#exec cmd="aplay -l" -->
+sha256:8 == <!--#exec cmd="aplay -l | grep '^card [0-9]*' |  sha256sum | cut -c -8" -->
+	</pre>
+	<h1>Network </h1>
+	<pre>
+<!--#exec cmd="/usr/sbin/iwgetid" -->
+	</pre>
+  </body>
+</html>
+  </body>
+</html>

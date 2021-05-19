@@ -2,7 +2,8 @@
 Description=Login run jamulus
 
 [Service]
-ExecStart=jamulus --nogui --connect _JAMULUS_IP_ --mutemyown --clientname _JAMULUS_CLIENT_
+EnvironmentFile=/boot/jamulus.sh
+ExecStart=jamulus --nogui --connect ${JAMULUS_IP} --mutemyown --clientname ${JAMULUS_CLIENT}
 
 [Install]
 WantedBy=default.target
