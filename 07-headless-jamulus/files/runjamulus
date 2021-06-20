@@ -1,0 +1,4 @@
+#!/bin/bash
+systemctl --user stop jamulus.service
+jamulus
+systemctl --user start jamulus.service

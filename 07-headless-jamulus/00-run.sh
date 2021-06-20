@@ -7,6 +7,7 @@ install -m 755 files/alsa.sh "${ROOTFS_DIR}/boot/alsa.sh"
 install -m 755 -d "${ROOTFS_DIR}/var/www/html/status"
 install -m 644 files/index.shtml "${ROOTFS_DIR}/var/www/html/status/index.shtml"
 install -m 755 files/jamulus.sh "${ROOTFS_DIR}/boot/jamulus.sh"
+install -m 755 files/runjamulus "${ROOTFS_DIR}/usr/bin/runjamulus"
 
 install -m 755 -d  "${ROOTFS_DIR}/home/pi/.config/systemd/user/default.target.wants"
 sed -i "s/_JAMULUS_IP_/${JAMULUS_IP}/g" "${ROOTFS_DIR}/boot/jamulus.sh"
